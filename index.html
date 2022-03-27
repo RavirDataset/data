@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-svg" href="./images/nvidia.svg">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://kit.fontawesome.com/8290b48404.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./dist/style.css">
+    
+    <title>RAVIR Dataset</title>
+</head>
+<body>
+    <div class="main container">
+
+        <div class="wrapper">
+            <div class="wrapper-title">
+                <div id="title">RAVIR: A Dataset and Methodology for the Semantic Segmentation and Quantitative Analysis of Retinal Arteries and Veins in Infrared Reflectance Imaging</div>
+            </div>
+
+            <div class="wrapper-crew">
+                <div class="crew">
+                    <ul>
+                        <li class="wow animate__animated animate__fadeInDown"><a target="_blank" class="" >Ali Hatamizadeh</a></li>
+                        <li class="wow animate__animated animate__fadeInDown"><a target="_blank" class="" >Hamid Hosseini</a></li>
+                        <li class="wow animate__animated animate__fadeInDown"><a target="_blank" class="" >Niraj Patel</a></li>
+                        <li class="wow animate__animated animate__fadeInUp"><a target="_blank" class="" >Jinseo Choi</a></li>
+                        <li class="wow animate__animated animate__fadeInUp"><a target="_blank" class="" >Cameron Pole</a></li>
+                        <li class="wow animate__animated animate__fadeInUp"><a target="_blank" class="" >Cory Hoeferlin</a></li>
+                        <li class="wow animate__animated animate__fadeInUp"><a target="_blank" class="" >Steven Schwartz</a></li>
+                        <li class="wow animate__animated animate__fadeInUp"><a target="_blank" class="" >Demetri Terzopoulos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wrapper-main-download">
+                <div class="main-download">
+                    <figure>
+                        <img src="./images/UCLA_Samueli_CS-1.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./images/ucla_stein.png" alt="">
+                    </figure>
+
+                    <div class="download-btn">
+                        <a class="wow animate__animated animate__lightSpeedInRight" target="_blank" href=""><i class="fas fa-file-code"></i> Dataset </a>
+                        <a class="wow animate__animated animate__lightSpeedInLeft" target="_blank" href=""><i class="far fa-sticky-note"></i> Paper </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-articles">
+                <div class="article">
+                </div>
+                <div id="news" class="article">
+                    <div class="title">
+                        <span>News</span>
+                    </div>
+                    <div class="news-wrapper">
+                        <ul>
+                            <li><i class="fa-solid fa-rss"></i> [Mar 2022] <a target="_blank" href="">Dataset</a> will be released soon.</li>
+                            <li><i class="fa-solid fa-rss"></i> [Mar 2022] The RAVIR paper has been accepted to <a target="_blank" href="https://www.embs.org/jbhi/">IEEE Journal of Biomedical Health Informatics</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article">
+                    <div class="title">
+                        <span>Abstract</span>
+                    </div>
+                    <article>
+                        <p>  The retinal vasculature provides important
+                            clues in the diagnosis and monitoring of systemic diseases
+                            including hypertension and diabetes. The microvascular
+                            system is of primary involvement in such conditions, and
+                            the retina is the only anatomical site where the microvasculature can be directly observed. The objective assessment
+                            of retinal vessels has long been considered a surrogate
+                            biomarker for systemic vascular diseases, and with recent
+                            advancements in retinal imaging and computer vision technologies, this topic has become the subject of renewed
+                            attention. In this paper, we present a novel dataset, dubbed
+                            RAVIR, for the semantic segmentation of Retinal Arteries
+                            and Veins in Infrared Reflectance (IR) imaging. It enables
+                            the creation of deep learning-based models that distinguish
+                            extracted vessel type without extensive post-processing.
+                            We propose a novel deep learning-based methodology,
+                            denoted as SegRAVIR, for the semantic segmentation of
+                            retinal arteries and veins and the quantitative measurement
+                            of the widths of segmented vessels. Our extensive experiments validate the effectiveness of SegRAVIR and demonstrate its superior performance in comparison to stateof-the-art models. Additionally, we propose a knowledge
+                            distillation framework for the domain adaptation of RAVIR
+                            pretrained networks on color images. We demonstrate that
+                            our pretraining procedure yields new state-of-the-art benchmarks on the DRIVE, STARE, and CHASE DB1 datasets.</p>
+                    </article>
+                </div>
+
+                <div class="article">
+                    <div class="title">
+                        <span>RAVIR Dataset</span>
+                    </div>
+                    <article>
+                        <p>  The images in RAVIR dataset were captured using infrared (815nm) Scanning Laser Ophthalmoscopy (SLO), which in addition to having higher quality and contrast,
+                            is less affected by opacities in optical media and pupil size. The RAVIR dataset consists of 46 IR retinal images from the UCLA Stein Eye Institute imaging database,
+                            divided into train and test sets of 26 and 20 images, respectively. RAVIR images are sized at 768 &times 768, captured using a Heidelberg Spectralis camera with a
+                            30&deg FOV and compressed in the Portable Network Graphics (PNG) format. Each pixel in the images has a reference length of
+                            12.5 microns. RAVIR project was carried out with the approval of the Institutional Review Board at UCLA and adhered to the tenets of the Declaration of Helsinki.</p>
+                    </article>
+                    <figure class="article-image">
+                        <img class="wow animate__animated animate__fadeInRight" src="./images/ravir.png" alt="">
+                        <figcaption>Example images and pixel-wise semantic labels in the RAVIR dataset.</figcaption>
+                    </figure>
+                </div>
+                <div class="article">
+                    <div class="title">
+                        <span>Data Usage Agreement / Citations</span>
+                    </div>
+                    <article>
+                        <p>
+                        RAVIR dataset may only be used for academic purposes. In addition, the following manuscripts must be cited if RAVIR dataset is used in any instances:<br>
+                            [1]: <a href=""> RAVIR: A Dataset and Methodology for the Semantic Segmentation and Quantitative
+                            Analysis of Retinal Arteries and Veins in Infrared Reflectance Imaging.</a><br>
+                            [2]: <a href="https://www.proquest.com/docview/2396189266?pq-origsite=gscholar&fromopenview=true"> Hatamizadeh, Ali. An Artificial Intelligence Framework for the Automated Segmentation and
+                            Quantitative Analysis of Retinal Vasculature. University of California, Los Angeles, 2020.</a><br>
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="wrapper-code">
+                    <pre>
+                        <code id="code">
+  @article{hatamizadeh2020artificial,
+       title={RAVIR: A Dataset and Methodology for the Semantic Segmentation and Quantitative Analysis of Retinal Arteries and Veins
+              in Infrared Reflectance Imaging},
+       author={Hatamizadeh, Ali and Hosseini, Hamid and Patel, Niraj and Choi, Jinseo and Pole, Cameron and Hoeferlin, Cory and
+              Schwartz, Steven and Terzopoulos, Demetri},
+       journal={arXiv preprint},
+       year={2022},
+    }
+                        </code>
+                    </pre>
+
+                    <pre>
+                        <code id="code">
+  @book{hatamizadeh2020artificial,
+       title={An Artificial Intelligence Framework for the Automated Segmentation and Quantitative Analysis of Retinal Vasculature},
+       author={Hatamizadeh, Ali},
+       year={2020},
+       publisher={University of California, Los Angeles},
+    }
+                        </code>
+                    </pre>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./dist/js/wow.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>
