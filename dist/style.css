@@ -7,8 +7,9 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #e6e8eb;
-  overflow-x: hidden; }
+  background-color: white;
+  overflow-x: hidden; 
+}
 
 html {
   font-family: 'Andada Pro', serif;
@@ -111,6 +112,8 @@ html {
     .main .wrapper .wrapper-title #title {
       font-size: 35px;
       font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif !important;
+
       line-height: 1.6em;
        }
       @media screen and (max-width: 575.99px) {
@@ -130,10 +133,10 @@ html {
 
     @media screen and (max-width: 575.99px) {
       .main .wrapper .wrapper-crew {
-        margin-top: 130px; } }
+        margin-top: 30px; } }
     @media screen and (min-width: 576px) and (max-width: 767.99px) {
       .main .wrapper .wrapper-crew {
-        margin-top: 110px; } }
+        margin-top: 50px; } }
     .main .wrapper .wrapper-crew .crew ul {
       display: flex;
       flex-wrap: wrap; 
@@ -173,7 +176,8 @@ html {
           color: black; }
         .main .wrapper .wrapper-crew .crew ul li a {
           text-decoration: none;
-          color: #e59866;
+          color: rgba(0, 0, 0, 0.705);
+          font-family: Arial, Helvetica, sans-serif !important;
           font-size: 25px;
           position: relative; }
           @media screen and (max-width: 575.99px) {
@@ -231,7 +235,7 @@ html {
       .main .wrapper .wrapper-main-download .download-btn a {
         text-decoration: none;
         color: white;
-        background-color: #d35400;
+        background-color: rgb(194, 186, 186);
         padding: 12px 20px;
         border-radius: 5px;
         display: flex;
@@ -241,7 +245,9 @@ html {
         align-items: center;
         position: relative; }
         .main .wrapper .wrapper-main-download .download-btn a i {
-          margin-right: 9px; }
+          margin-right: 9px; 
+          
+        }
         .main .wrapper .wrapper-main-download .download-btn a::before {
           position: absolute;
           content: '';
@@ -264,7 +270,7 @@ html {
           list-style: none;
           margin-bottom: 10px; }
           .main .wrapper .wrapper-articles .article .news-wrapper li a {
-            color: #d35400;
+            color: rgb(16, 88, 170);
             text-decoration: none; }
           .main .wrapper .wrapper-articles .article .news-wrapper li i {
             margin-right: 10px; }
